@@ -1,0 +1,16 @@
+{
+  "properties": {
+    "displayName": "Only-CanadaCentral",
+    "description": "Denies any resource not in Canada Central",
+    "mode": "All",
+    "policyRule": {
+      "if": {
+        "field": "location",
+        "notEquals": "canadacentral"
+      },
+      "then": {
+        "effect": "deny"
+      }
+    }
+  }
+}
